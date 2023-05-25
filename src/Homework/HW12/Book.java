@@ -1,16 +1,22 @@
 package Homework.HW12;
 
-public class Book extends Author {
-    private String bookName;
+public class Book {
+    private Author author;
+    private String name;
     private int yearPublicBook;
 
-    public Book(String bookName, String authorName, String authorSurname,  int yearPublicBook) {
-        super(authorName,authorSurname);
-        this.bookName = bookName;
+    public Book(String name, Author author, int yearPublicBook) {
+        this.author = author;
+        this.name = name;
         this.yearPublicBook = yearPublicBook;
     }
-    public String getBookName() {
-        return this.bookName;
+
+    public String getName() {
+        return this.name;
+    }
+
+    public Author getAuthor() {
+        return this.author;
     }
 
     public int getYearPublicBook() {

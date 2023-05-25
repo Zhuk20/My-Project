@@ -1,16 +1,19 @@
 package Homework.HW12;
 
 public class Author {
-    private String authorName ;
-    private String authorSurname;
-    public Author (String authorName, String authorSurname){
-        this.authorName = authorName;
-        this.authorSurname = authorSurname;
+    private String name;
+    private String surname;
+
+    public Author(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
-    public String getAuthorName(){
-        return this.authorName;
+
+    public String getName() {
+        return this.name;
     }
-    public String getAuthorSurname(){
-        return this.authorSurname;
+
+    public String getSurname() {
+        return this.surname;
     }
 }
